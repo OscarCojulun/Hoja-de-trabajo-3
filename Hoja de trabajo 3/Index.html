@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Semuc Champey - Inicio</title>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary custom-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Semuc Champey</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="atracciones.html">Atracciones</a></li>
+          <li class="nav-item"><a class="nav-link" href="alojamiento.html">Alojamiento</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-hero">
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://cdn.shortpixel.ai/spai/q_lossless%2Bw_1082%2Bto_webp%2Bret_img/www.charlotteplansatrip.com/wp-content/uploads/2018/11/dji_0003.jpg" class="d-block w-100" alt="Semuc Champey paisaje">
+          <div class="carousel-caption d-none d-md-block">
+            <h1 class="display-5">Bienvenido a Semuc Champey</h1>
+            <p>Descubre sus piscinas naturales y belleza única.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://cdn-ecllj.nitrocdn.com/tlOjUJBEedYlFmMWnYnKfpcNXvNKiSnd/assets/images/optimized/rev-3b60ad8/www.wanderingstus.com/wp-content/uploads/2023/02/Semuc-Champy-3-scaled.jpg" class="d-block w-100" alt="Piscinas Semuc Champey">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Piscinas naturales</h2>
+            <p>Nada en aguas turquesa entre formaciones de travertino.</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container my-5">
+    <div class="row g-4">
+      <div class="col-lg-8">
+        <article class="card shadow-sm">
+          <div class="card-body">
+            <h2 class="card-title">Introducción</h2>
+            <p class="card-text">
+              Semuc Champey es un monumento natural en Guatemala famoso por su puente natural de piedra caliza y sus piscinas escalonadas. En esta web encontrarás cómo llegar, precios, actividades y opciones de alojamiento.
+            </p>
+            <a href="atracciones.html" class="btn btn-outline-light me-2">Ver Atracciones</a>
+            <a href="alojamiento.html" class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#contactModal">Contactar / Reservas</a>
+          </div>
+        </article>
+      </div>
+
+      <aside class="col-lg-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5>Estimado de gastos (económico)</h5>
+            <table class="table table-sm table-dark mt-3">
+              <thead>
+                <tr><th>Concepto</th><th>Q</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Shuttle</td><td>350</td></tr>
+                <tr><td>Pickup</td><td>20</td></tr>
+                <tr><td>Entrada</td><td>50</td></tr>
+                <tr><td>Tour</td><td>200</td></tr>
+                <tr><td>Alojamiento</td><td>200</td></tr>
+                <tr class="table-warning"><td><strong>Total</strong></td><td><strong>820</strong></td></tr>
+              </tbody>
+            </table>
+            <a href="atracciones.html#como-llegar" class="d-block mt-2">Cómo llegar →</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark text-light">
+        <div class="modal-header">
+          <h5 class="modal-title">Contacto / Reservas</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>Para bloquear tarjetas, emergencias o reservas comunícate con tu banco y con la oficina de turismo local.</p>
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Nombre</label>
+              <input class="form-control" type="text" />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input class="form-control" type="email" />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Mensaje</label>
+              <textarea class="form-control" rows="3"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-outline-light" data-bs-dismiss="modal">Cerrar</button>
+          <button class="btn btn-gold">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="py-4 bg-secondary text-center text-white">
+    <div class="container">
+      <small>© 2025 Semuc Champey - Sitio de ejemplo</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
